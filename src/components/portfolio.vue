@@ -27,7 +27,7 @@
           </div>
         </div> 
       </slide>
-      <slide
+      <!-- <slide
         v-for="(value, key) in items.design"
         v-bind:key="'design-'+key">
         <div class="item design">
@@ -41,7 +41,7 @@
             <p>{{ value.detail }}</p>
           </div>
         </div> 
-      </slide>
+      </slide> -->
     </carousel>
   </section>
 </template>
@@ -116,7 +116,8 @@
           z-index: 1;
           font-size: 14px;
           font-weight: bold;
-          background: $green;
+          // background: $green;
+          background: $yellow;
           color: #fff;
           padding: 5px 15px;
           border-radius: 5px;
@@ -128,12 +129,15 @@
         h2{
           color: #333;
           font-weight: bold;
-          font-size: 1.6em;
+          font-size: 1.5em;
           margin: 20px 0;
           border-bottom: 1px solid $lightGreen;
           padding-bottom 20px;
           a{
             color: #333;
+            &:hover{
+              color: $green;
+            }
           }
         }
         h3{
